@@ -1,0 +1,143 @@
+<div class="modal fade" id="exampleModa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" id="ef">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+      </div>
+      <div class="modal-body">
+        
+        <form action="/" method="post" id="edit-form" > 
+  <div class="row sec size" >
+        <div class="col bg-white  ">
+          <div class="card-header"> Employee Details </div>
+          <div class="row sec" id="zoro">
+            <div class="col-3 image-display">
+                <div class="employee-edit-form" id="view-point"> 
+                    <img src="img/kannadi.png" alt="" id="img-edit">
+                </div>
+                <div class="change">
+                    <label for="fileInput">Change</label>
+                    <input type="file" id="fileInput" name="image" accept="image/*" onchange="previewImage()">
+                </div>
+            </div>
+            <!-- <button type="submit" >save image</button> -->
+          
+          </div>
+        
+       
+
+         
+          <div class="row sec">
+
+            <div class="col-3">
+              <label for="">Salutation <span>*</span></label>
+              <select  id="edit-salu" class="form-select" aria-label="Default select example">
+                <option selected>Select</option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Ms">Ms</option>
+              </select>
+            </div>
+            
+              <div class="col">
+                <label for="">First Name <span>*</span></label>
+                <input type="text" class="form-control" placeholder="first name"  aria-label="First name" id="edit-first">
+              </div>
+              <div class="col">
+                <label for="">Second Name <span>*</span></label>
+                <input type="text" class="form-control" placeholder="second name" aria-label="Last name" id="edit-second">
+              </div>
+            </div>
+           <div class="row sec">
+            <div class="col">
+              <label for="inputEmail4" class="form-label">Email <span>*</span></label>
+              <input type="email" class="form-control" placeholder="ananthu@gmail.com" id="edit-email">
+            </div>
+            <div class="col">
+              <label for="inputtel" class="form-label">Mobile Number <span>*</span></label>
+              <input type="tel" class="form-control" placeholder=" Enter mobile Number" id="edit-phone">
+            </div>
+           </div>
+
+
+           <div class="row sec">
+            <div class="col">
+              <label for="inputdate4" class="form-label">DOB <span>*</span></label>
+              <input type="date" class="form-control" placeholder="enter DOB" id="edit-date">
+            </div>
+            <div class="col imp radio">
+              <div class="row gap">
+                  <label for="Gender" class="form-label imp">Gender<span class="text-danger">*</span></label>
+                  <div class="col gap" id="radio">
+                      <input class="form-check-input Gender" type="radio" name="Gender" value="male" id="flexRadioDefault1" ><label class="form-label">Male</label>
+                      <input class="form-check-input Gender" type="radio" name="Gender" value="female" id="flexRadioDefault0" ><label class="form-label">Female</label>      
+                      <!-- <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault09" >Other       -->
+
+                  </div>
+              </div>
+              
+          </div>
+           </div>
+          
+           
+           <form class="row sec">
+            
+            <div class="col-12">
+              <label for="inputaddress" class="form-label">Address <span>*</span></label>
+              <input type="text" class="form-control" id="edit-adress" placeholder="Enter Adress">
+            </div>
+
+            <div class="col-12">
+              <label for="qualification" class="form-label">Qualification <span>*</span></label>
+              <input type="text" class="form-control" id="edit-quali" placeholder="Enter qualificaions">
+            </div>
+            </form>
+          
+            <div class="row sec">
+              <div class="col">
+                <label for="">Country <span>*</span></label>
+                <select class="form-select" aria-label="Default select example" id="edit-country">
+                  <!-- <option selected>Select</option> -->
+                  <option value="India">India</option>
+              <option value="UK">UK</option>
+              <option value="USA">USA</option>
+                </select>
+              </div>
+                <div class="col">
+                  <label for="">State <span>*</span></label>
+                  <select class="form-select" aria-label="Default select example" id="edit-state">
+                    <!-- <option selected>Select</option> -->
+                    <option value="Kerala">kerala</option>
+                <option value="tamil nadu">tamil nadu</option>
+                <option value="England">England</option>
+                <option value="Texas">Texas</option>
+                <option value="New York">New York</option>
+                <option value="Wales">Wales</option>
+                  </select>
+                
+              </div>
+
+            </div>
+            
+            <div class="row sec">
+              <div class="col">
+                <label for="">City <span>*</span></label>
+                <input type="text" class="form-control" placeholder="enter city"  aria-label="First name" edit-city id="edit-city">
+              </div>
+              <div class="col">
+                <label for="">Pin/Zip <span>*</span></label>
+                <input type="text" class="form-control" placeholder="enter pin/zip" aria-label="Last name" id="edit-pin">
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+          <button type="button" class="btn text-primary me-sm-2" data-bs-dismiss="modal">Cancel</button>
+          <button type="submit" class="btn btn-primary py-3"  data-toggle="modal" onclick="ref()" >Save changes</button>
+        </div>
+    </div>
+</form>
+      </div>
+ 
+    </div>
+  </div>
+</div>

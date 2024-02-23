@@ -1,0 +1,156 @@
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="card-header" id="exampleModalLabel">Basic Details</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+        
+  <div class="modal-body">
+            
+    <form id="modal" class="add-user" action="/api/employees" method="post" enctype="multipart/form-data" onsubmit="return validate()">
+          <div class="col bg-white col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+            <div class="row sec" >
+              <div class="card col-6" id="img-border"> 
+                <div class="card-body">
+                  <input class="file" type="file" id="file" accept="image/*" />
+                </div>
+                <div class="icon">
+                  <i class="fa-solid fa-arrow-up"></i>
+                 <h2>Upload Image</h2>
+                  <h1>PNG, JPG files are allowed</h1>
+                </div> 
+              </div>
+              <div id="img-view" class="col-2">
+                <i class="fa-solid fa-image-portrait"></i>
+             </div>
+              
+            </div>
+          
+      
+      <div id="add-img" style="color: red; text-align: center; visibility: hidden;" >Please upload your image</div>
+
+     
+      <div class="row sec">
+        <div class="row sec">
+        <div class="col-3">
+          <label for="" >salutation <span>*</span></label>
+          <select id="salutation" class="form-select" aria-label="Default select example" >
+            <option value="Mr" >Mr</option>
+            <option value="Mrs">Mrs</option>
+            <option value="Ms">Ms</option>
+          </select>
+          </div>
+        
+          <div class="col">
+            <label for="">First Name <span>*</span></label>
+            <input id="firstname" type="text" class="form-control" placeholder="first name">
+          </div>
+          <div class="col">
+            <label for="">Second Name <span>*</span></label>
+            <input id="secondname" type="text" class="form-control" placeholder="second name" aria-label="Last name" >
+          </div>
+        </div>
+
+        <div class="row sec">
+          <div class="col">
+           <label for="username" class="form-label"> Username <span>*</span></label>
+           <input id="username" type="text" class="form-control" placeholder="Enter Username" >
+          </div>
+          <div class="col">
+            <label for="Password" class="form-label"> Password <span>*</span></label>
+            <input id="password" type="password" class="form-control" placeholder="Enter password" >
+          </div>
+         </div>
+
+       <div class="row sec">
+        <div class="col">
+          <label for="inputEmail4" class="form-label">Email <span>*</span></label>
+          <input type="email" class="form-control" placeholder="Enter your email id" id="inputEmail4" >
+        </div>
+        <div class="col">
+          <label for="inputtel4" class="form-label">Mobile Number <span>*</span></label>
+          <input type="tel" class="form-control" placeholder=" Enter mobile Number" id="inputtel4" >
+        </div>
+       </div>
+
+       <div class="row sec">
+        <div class="col">
+          <label for="inputdate4" class="form-label">DOB <span>*</span></label>
+          <input type="date" class="form-control" placeholder="enter DOB" id="inputdate4" >
+        </div>
+        <div class="col imp radio">
+          <div class="row ">
+              <label for="exampleInputEmail1" class="form-label imp">Gender<span class="text-danger">*</span></label>
+              <div class="col cube">
+                  <input class="form-check-input " type="radio" name="gender" id="flexRadioDefault" value="male" checked>male
+                  <input class="form-check-input " type="radio" name="gender" id="flexRadioDefault3" value="female" >female      
+                  <!-- <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" >Other       -->
+
+              </div>
+          </div>
+          
+      </div>
+       </div>
+     
+       
+        
+        <div class="col">
+          <label for="inputAddress" class="form-label">Address <span>*</span></label>
+          <input type="text" class="form-control" id="inputAddress" placeholder="Enter Address">
+        </div>
+       <div class="col">
+          <label for="qualifications" class="form-label">qualification <span>*</span></label>
+          <input type="text" class="form-control" id="qualifications" placeholder="Enter qualification">
+        </div>
+        
+      
+        <div class="row sec">
+          <div class="col">
+            <label for="">Country <span>*</span></label>
+            <select class="form-select" id="country" aria-label="Default select example">
+              <option selected>Select</option>
+              <option value="India">India</option>
+              <option value="UK">UK</option>
+              <option value="USA">USA</option>
+            </select>
+          </div>
+            <div class="col">
+              <label for="">State <span>*</span></label>
+              <select class="form-select" id="state" aria-label="Default select example">
+                <option selected>Select</option>
+                <option value="Kerala">kerala</option>
+                <option value="tamil nadu">tamil nadu</option>
+                <option value="England">England</option>
+                <option value="Texas">Texas</option>
+                <option value="New York">New York</option>
+                <option value="Wales">Wales</option>
+              </select>
+            
+          </div>
+
+        </div> 
+        
+        <div class="row sec">
+          <div class="col">
+            <label for="">City <span>*</span></label>
+            <input type="text" id="city" class="form-control" placeholder="enter city"  aria-label="First name">
+          </div>
+          <div class="col">
+            <label for="">Pin/Zip <span>*</span></label>
+            <input type="text" class="form-control" id="pin" placeholder="enter pin/zip" aria-label="Last name">
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn text-primary me-sm-2" data-bs-dismiss="modal" >Cancel</button>
+          <button type="submit" class="btn btn-primary py-3">add employee</button>
+        </div>
+      </div>
+  </form>
+
+</div>
+
+      </div>
+    </div>
+  </div>
+</div>
